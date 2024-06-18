@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #19A2AE;
+    position: relative;
+    overflow: hidden;
+}
+
+.pattern-top {
+    position: absolute;
+    top: -25rem;
+    left: -25rem;
+}
+
+.pattern-bottom {
+    position: absolute;
+    bottom: -35rem;
+    right: -18rem;
+}
+
+.wrapper {
+    position: absolute;
+}
+
+.box {
+    position: relative;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 280px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+
+}
+
+.pattern-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.box .image {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.box .image img {
+    border-radius: 3.5rem;
+    border: 4px solid white;
+    width: 85px;
+    margin-top: 3rem;
+}
+
+.card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.box .color {
+    background-color: aqua;
+    top: 0;
+    width: 100%;
+    margin-top: -2.3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 3rem;
+
+}
+
+/* .box .color {
+    background-color: aquamarine;
+    width: 25%;
+    border: 3px double solid aquamarine;
+} */
+.box .stats {
+    font-size: 18px;
+    margin: 0.7rem 0rem 0.3rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box .name {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.box .number-name {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(189, 189, 189);
+}
+
+.box .london {
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+    margin-bottom: 1.3rem;
+}
+
+.border {
+    border: 1px solid rgb(119, 119, 119);
+}
+
+.box .socials-box {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .socials-box .numbers {
+    font-size: 15px;
+    font-weight: 700;
+    word-spacing: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.box .socials-box .letters {
+    font-size: 10px;
+    word-spacing: 3.5rem;
+    margin-top: 0.3rem;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 375px) {
+    .pattern-top {
+        position: absolute;
+        top: -43rem;
+        left: -43rem;
+    }
+
+    .pattern-bottom {
+        position: absolute;
+        bottom: -43rem;
+        right: -43rem;
+    }
+}
